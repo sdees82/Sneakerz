@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
+import { withRouter } from "react-router";
 import './nav.styles.scss'
 
-class  Nav extends Component {
-    state = {  }
-    render() { 
+const Nav = ({match, history}) =>{ 
         return (
             <nav >
                 <ul>
-                    <img src="" alt="Sneaker Designer"/>
+                    <li><img onClick={() => history.push(`${match.url}`)}src="" alt="Sneaker Designer"/></li>
                     <div>
-                        <li>Brands</li>
-                        <li>Designers</li>
+                        <li onClick={() => history.push(`${match.url}brands`)}>Brands</li>
+                        <li onClick={() => history.push(`${match.url}designers`)}>Designers</li>
                     </div>
                 </ul>
             </nav>
 
         );
     }
-}
  
-export default Nav;
+export default withRouter(Nav);
