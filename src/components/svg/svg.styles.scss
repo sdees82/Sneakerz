@@ -1,0 +1,41 @@
+
+svg{
+    width: 50%;
+}
+path{
+    stroke-width:3;
+    stroke-miterlimit:10;
+    stroke: #000;
+    fill: #000;
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animate 3.6s cubic-bezier(0,0.13,1,.1);
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    30%{
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    90%{
+        opacity: 10;
+        fill: rgba(0, 0, 0, 0);
+    }
+
+
+    100%{
+        opacity: 10;
+        fill: rgba(0, 0, 0, 1);
+        stroke-dashoffset: 0;
+    }
+
+
+}
