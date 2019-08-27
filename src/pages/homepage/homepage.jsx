@@ -1,5 +1,5 @@
 import React from 'react'
-import './homepage.style.scss'
+import './homePage.style.scss'
 import Svg from '../../components/svg/svg.component';
  
 const HomePage = () => {

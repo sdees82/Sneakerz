@@ -2,24 +2,11 @@ import React from 'react';
 import './App.css';
 
 import Nav from './components/nav/nav.component'
-import Svg from './components/svg/svg.component'
 
 import {Route, Switch} from 'react-router-dom'
-import HomePage from './pages/homepage/homepage';
-import './pages/homepage/homepage';
-
-const Brands = () => (
-  <div className="Homepage">
-    <h1>Brands Page</h1>
-  </div>
-  
-)
-
-const Designers = () => (
-  <div className="Homepage">
-  <h1>Designers Page</h1>
-</div>
-)
+import HomePage from './pages/homePage/homePage';
+import DesignersCollection from './pages/designersCollection/designersCollection'
+import BrandsCollection from './pages/brandsCollection/brandsCollection.jsx'
 
 function App() {
 
@@ -28,8 +15,8 @@ function App() {
       <Nav/>
       <Switch>
         <Route exact path='/' component={HomePage}/>
-        <Route exact path='/brands' component={Brands}/>
-        <Route exact path='/designers' component={Designers}/>
+        <Route exact path='/brands' component={BrandsCollection}/>
+        <Route exact path='/designers' component={DesignersCollection}/>
       </Switch>
     </div>
   );
