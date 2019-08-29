@@ -19,6 +19,9 @@ const brandsData = [
         name: "Under Armour"
     },{
         name: "Puma"
+    },
+    {
+        name: "Converse"
     }
 ]
 

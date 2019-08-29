@@ -1,22 +1,23 @@
 .card-container{
-    padding-top: 4em;
+    height: 80%;
     display: flex;
-    justify-content: space-around;
-    align-content: center;
     width: 75%;
     flex-wrap: wrap;
-
+    
     .card{
         margin: .5em;
-        width: 350px;
-        // min-width: 150px;
-        height: 200px;
+        width: 22%;
+        min-width: 200px;
+        height: 350px;
         background: #000000;
         cursor: pointer;
         color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2em;
+        font-size: 1.7em;
+        background-size: cover;
+        background-position: center;
     }
 }
+

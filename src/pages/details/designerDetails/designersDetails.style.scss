@@ -1,0 +1,20 @@
+.collection{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    ul{
+        position: absolute;
+         left: 0;
+         top: 0;
+         list-style: none;
+
+         li{
+             display: inline-block;
+             text-decoration: none;
+             padding-right: .5em;
+         }
+    }
+}

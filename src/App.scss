@@ -1,0 +1,21 @@
+.App{
+  height: 100%;
+}
+
+li{
+    cursor: pointer;
+}
+
+.switch-wrapper {
+  position: relative;
+  width: 100%;
+}
+ 
+.switch-wrapper > div {
+  position: absolute;
+  top: 3.5em;
+  width: 100%;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center; 
+}

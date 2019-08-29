@@ -1,15 +1,16 @@
 import React from 'react'
 
 import designersData from '../../data/designers'
+import { withRouter } from "react-router";
 
 import './designers.styles.scss'
 
-const Designers = () => {
+const Designers = ({history, match}) => {
 return (
-    <div className="card-container">
+    <div className="designers-card-container">
         {designersData.map((val, i) => {
             return(
-                <div onClick={()=> console.log("clicked") } key={i} className="card">
+                <div onClick={()=> history.push(`${match.url}/${val.route}`) } key={i} className="card" style={{backgroundImage: `url('${val.imageUrl}')`}}>
                     <span>{val.name}</span>
                 </div>
                 )
@@ -19,4 +20,4 @@ return (
     );
 }
  
-export default Designers;
+export default withRouter(Designers);
